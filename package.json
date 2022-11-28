@@ -1,0 +1,35 @@
+{
+  "name": "be-traning-fastify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/listen.js",
+  "scripts": {
+    "start": "node dist/listen",
+    "dev": "cross-env NODE_ENV=development ts-node-dev --no-notify --respawn --transpile-only src/listen.ts",
+    "build": "rm -rf dist && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thirdmadman/be-traning-fastify.git"
+  },
+  "author": "thirdmadman",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/thirdmadman/be-traning-fastify/issues"
+  },
+  "homepage": "https://github.com/thirdmadman/be-traning-fastify#readme",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.10.0",
+    "graphql": "^16.6.0",
+    "mercurius": "^11.3.0",
+    "mercurius-codegen": "^5.0.0",
+    "mongoose": "^6.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.3"
+  }
+}
